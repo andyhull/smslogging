@@ -11,7 +11,7 @@ class DashboardController < ApplicationController
   	@user.sid = sid
   	@user.save
 
-  	redirect_to 'dashboard/index'
+  	redirect_to '/dashboard'
   end
 
   def add_sid_to_twilio_connect_button(sid)
