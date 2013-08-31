@@ -1,7 +1,2 @@
-<%= fields_for @user do |u| %>
-  <%= u.label :sid %>
-  <%= u.text_field :sid %>
-  <%= u.submit :class => 'btn btn-primary' %>
-<% end %>
-
-    
+<h4>You don't have any authorized apps yet. </h4>
+<%= link_to 'Connect', connect_path %>
