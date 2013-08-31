@@ -1,0 +1,15 @@
+<div class="row">
+	<div class="small-12 large-12 columns">
+		<div class="large-12 columns panel">
+			<% if user_signed_in? %>
+	  <p><%= link_to "Welcome!", edit_user_registration_path %> | <%= link_to "Sign out", destroy_user_session_path, method: :delete %></p>
+	<% else %>
+	<%= render(:partial => 'login') %>
+	<% end %>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="small-8 large-8 columns">
+	</div>
+</div>
