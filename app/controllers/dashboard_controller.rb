@@ -5,6 +5,15 @@ class DashboardController < ApplicationController
   	@sms = get_sms_from_twilio(@user)
   end
 
+  def connect
+  	sid = params['AccountSid']
+  	@user = current_user
+  	@user.sid = sid
+  	@user.save
+
+  	redirect_to 'dashboard/index'
+  end
+
   def add_sid_to_twilio_connect_button(sid)
   	
   end
