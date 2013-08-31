@@ -1,1 +1,3 @@
-<%= button_to "", "https://smslog.herokuapp.com/dashboard/?AccountSid=#{sms}", id: "twilio-connect-button" %>
+<% sms.each do |message| %>
+	<div>message.body</div>
+<% end %>
