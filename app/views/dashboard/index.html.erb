@@ -1,0 +1,6 @@
+<div>hi <%= @user.name %></div>
+<% if @sid %>
+	<%= render(partial: "sms", object: @sid, as: :sms) || "There's no sid" %>
+<% else %>
+	<%= render 'form' %>
+<% end %>		
